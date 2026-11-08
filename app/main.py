@@ -12,7 +12,7 @@ import hmac
 import hashlib
 import base64
 
-app = FastAPI(title="MCHLERN BINARY ENGINE", version="0.2.0")
+app = FastAPI(title="MCHLERN BINARY ENGINE", version="0.3.0")
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("mchlern")
 
@@ -144,9 +144,9 @@ def home():
     return {
         "name": "MCHLERN BINARY ENGINE",
         "status": "online",
-        "version": "0.2.0",
+        "version": "0.3.0",
         "authentication": "activation-code/session",
-        "parser": "adapter-required"
+        "parser": "rbxm_parser-adapter"
     }
 
 
